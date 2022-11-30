@@ -301,10 +301,6 @@ background-color: var(--textarea-block-color) !important; }
 .bd-switch .bd-switch-symbol path {
     fill: rgba(114,118,125,0.85);
 }
-/* bd switches checked button icon fill */
-.bd-switch.bd-switch-checked .bd-switch-symbol path {
-    fill: hsla(var(--accent-hsl),var(--accent-opacity));
-}
 /* bd switches slider bg transition -> off */
 .bd-switch input:checked:active+.bd-switch-body {
     --switch-color: hsla(var(--accent-hsl),var(--accent-opacity));
@@ -312,6 +308,11 @@ background-color: var(--textarea-block-color) !important; }
 /* bd switches slider bg transition -> on */
 .bd-switch input:active+.bd-switch-body {
     --switch-color: var(--card-color);
+}
+.container-2nx-BQ.checked-25WXMf,
+.bd-switch input:checked + .bd-switch-body {
+    --switch-color: var(--switch-slider-color);
+    --switch-slider-color: hsla(var(--accent-hsl),var(--accent-opacity));;
 }
 
 /* slider bar background */
