@@ -3,6 +3,9 @@
 	/* windows-titlebar */				   
 	--TB-header-padding: 125px;
 	
+	--switch-slider-color: var(--card-color);
+	--switch-knob-color: var(--card-color);
+	
 	--code-bg-enabled: 0;
 	--font-display: "Dancing Script Medium", Whitney !important;
 }
@@ -289,31 +292,10 @@ background-color: var(--textarea-block-color) !important; }
 	border-right-color: var(--popout-color);
 }
 
-/* switches slider bg */
-.container-2nx-BQ {
-	--switch-slider-color: hsla(var(--accent-hsl),var(--accent-opacity));
-}
-/* switches button fill */
-.container-2nx-BQ .slider-32CRPX rect {
-    fill: var(--accent-text-color) !important;
-}
 /* switches slider bg OFF */
 .container-2nx-BQ[style*="background-color: rgb(114"] {
 	background-color: var(--card-color) !important;
 	--switch-slider-color: rgba(114,118,125,0.85);
-}
-/* switches button fill OFF */
-.container-2nx-BQ[style*="background-color: rgb(114"] .slider-32CRPX rect {
-	fill: var(--card-color) !important;
-}
-
-/* bd switches slider bg */
-.bd-switch .bd-switch-body {
-    --switch-color: var(--card-color);
-}
-/* bd switches button fill */
-.bd-switch .bd-switch-body .bd-switch-slider .bd-switch-handle {
-    fill: var(--card-color);
 }
 /* bd switches button icon fill */
 .bd-switch .bd-switch-symbol path {
