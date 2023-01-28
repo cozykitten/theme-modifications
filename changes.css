@@ -316,8 +316,14 @@ background-color: var(--textarea-block-color) !important; }
 }
 
 /* slider bar background */
-.bar-1Bhnl9 {
-	background-color: var(--card-color) !important;
+.bar-2H7Q9u .barFill-3RgCsY {
+    background-color: var(--background-modifier-selected) !important;
+}
+.bar-2H7Q9u {
+    background-color: transparent;
+}
+.theme-dark .bar-2H7Q9u, .theme-dark .markDash-1ATsxA {
+    background: var(--card-color);
 }
 
 /* expanded folder background */
