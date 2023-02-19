@@ -226,11 +226,6 @@ background-color: var(--textarea-block-color) !important; }
     background-color: unset;
 }
 
-/* slash command option */
-.theme-dark .optionPill-2kmuZR {
-    background-color: var(--popout-color);
-}
-
 /* integration permissions settings cards */
 .cardHeader-3d6H8N {
     background-color: unset;
@@ -286,15 +281,6 @@ background-color: var(--textarea-block-color) !important; }
 }
 .total-1c5KCN:after {
 	border-right-color: var(--popout-color);
-}
-
-/* bd switches slider bg transition -> off */
-.bd-switch input:checked:active+.bd-switch-body {
-    --switch-color: hsla(var(--accent-hsl),var(--accent-opacity));
-}
-/* bd switches slider bg transition -> on */
-.bd-switch input:active+.bd-switch-body {
-    --switch-color: var(--card-color);
 }
 
 /* slider bar background */
