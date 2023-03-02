@@ -384,18 +384,22 @@ input.timestamp-input {
 }
 
 /* accent colour as online colour */
-.wrapper-1VLyxH [mask*="url(#svg-mask-status-online"].pointerEvents-9SZWKj { /*member & dm list & userpopout, etc*/
+.wrapper-3Un6-K [mask*="url(#svg-mask-status-online"].pointerEvents-2KjWnj { /*member & dm list & userpopout, etc*/
 	fill: hsla(var(--accent-hsl), 0.9);
 	filter: saturate(var(--saturation-factor));
 }
-.wrapper-1VLyxH[aria-label*="Online"] .mask-1FEkla.svg-2azL_l svg [width="25"][height="15"] { /*avatar*/
+.wrapper-3Un6-K[aria-label*="Online"] .mask-1y0tyc.svg-1G_H_8 svg [width="25"][height="15"] { /*avatar*/
 	fill: hsla(var(--accent-hsl), 0.9);
 	filter: saturate(var(--saturation-factor));
 }
-.mask-2Me5HY [mask*="url(#svg-mask-status-online"] .status-2DiCMd { /*avatar status picker*/
+.mask-3tgVZv [mask*="url(#svg-mask-status-online"] .status-3cqfT9 { /*avatar status picker*/
 	background-color: hsla(var(--accent-hue), calc(var(--accent-saturation) * var(--saturation-factor)), var(--accent-lightness), 0.9) !important;
 }
-[aria-label*="Online"].status-12NUUC .mask-2Me5HY rect { /*dm open*/
+[aria-label*="Online"].status-12NUUC .mask-3tgVZv rect { /*dm open*/
     fill: hsla(var(--accent-hsl), 0.9);
+    filter: saturate(var(--saturation-factor));
+}
+.statusDot-39Gozj [mask*="url(#svg-mask-status-online"] { /*profiles settings*/
+	fill: hsla(var(--accent-hsl), 0.9);
     filter: saturate(var(--saturation-factor));
 }
