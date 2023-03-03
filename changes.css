@@ -138,7 +138,8 @@ background-color: var(--textarea-block-color) !important; }
 .authedApp-8q3NA9, /* authorised apps */
 .tier-3CS7-p, /* server settings -> sticker */
 .checklistContainer-12xGp5, /* server settings -> partner programme */
-.checklist-Asy_56 { /* server settings -> discovery */
+.checklist-Asy_56, /* server settings -> discovery */
+.connectContainer-1hylYM { /* connections */
     box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 25%);
 }
 /* (header only) */
@@ -147,6 +148,7 @@ background-color: var(--textarea-block-color) !important; }
 .tierHeaderLocked-30MLlO, .tierHeaderUnlocked-1OpOLf,
 .checklistHeader-3liG7E,
 .header-Wl8ec-,
+.connectContainer-1hylYM .connectHeader-2VkFiv,
 .enableContainer-H2cRts { /* welcome screen, no header & body class for this */
     box-shadow: none;
     border-bottom: 1px solid var(--card-color);
