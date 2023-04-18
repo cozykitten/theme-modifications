@@ -414,6 +414,5 @@ input.timestamp-input {
 	filter: saturate(var(--saturation-factor));
 }
 .status-12NUUC .mask-3tgVZv rect { /*dm open*/
-    fill: hsla(var(--accent-hsl), 0.9);
     filter: saturate(var(--saturation-factor));
 }
