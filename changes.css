@@ -405,3 +405,15 @@ input.timestamp-input {
 	fill: hsla(var(--accent-hsl), 0.9);
     filter: saturate(var(--saturation-factor));
 }
+
+/* saturation fix until discord fixes their shit */
+.wrapper-3Un6-K .pointerEvents-2KjWnj { /*member & dm list & userpopout, etc*/
+	filter: saturate(var(--saturation-factor));
+}
+.wrapper-3Un6-K .mask-1y0tyc.svg-1G_H_8 svg [width="25"][height="15"] { /*avatar*/
+	filter: saturate(var(--saturation-factor));
+}
+.status-12NUUC .mask-3tgVZv rect { /*dm open*/
+    fill: hsla(var(--accent-hsl), 0.9);
+    filter: saturate(var(--saturation-factor));
+}
