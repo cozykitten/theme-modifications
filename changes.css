@@ -260,6 +260,17 @@ background-color: var(--textarea-block-color) !important; }
     background-color: var(--background-modifier-hover) !important;
 }
 
+/* user profile on dm sidebar */
+.profileColors-2AgAV4 {
+    --profile-gradient-primary-color: var(--popout-color) !important;
+    --profile-gradient-secondary-color: var(--popout-color) !important;
+    --profile-gradient-overlay-color: transparent !important;
+    --profile-avatar-border-color: var(--popout-color) !important;
+    --profile-body-background-color: var(--popout-color) !important;
+    --profile-body-divider-color: var(--background-modifier-accent) !important;
+    background: transparent;
+}
+
 
 
 /*	ADDING TRANSLUCENCY		*/
@@ -401,7 +412,7 @@ input.timestamp-input {
     fill: hsla(var(--accent-hsl), 0.9);
     filter: saturate(var(--saturation-factor));
 }
-.statusDot-39Gozj [mask*="url(#svg-mask-status-online"] { /*profiles settings*/
+.statusDot-3YgDKA [mask*="url(#svg-mask-status-online"] { /*profiles settings*/
 	fill: hsla(var(--accent-hsl), 0.9);
     filter: saturate(var(--saturation-factor));
 }
