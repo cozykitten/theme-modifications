@@ -93,9 +93,10 @@
 }
 
 /* make spoiler visible */
-.spoilerText-2G40u0.hidden-3B-Rum,
-.spoilerText-2G40u0 {
-background-color: var(--textarea-block-color) !important; }
+.spoilerContent-32CqO-.hidden-2lQZ5q,
+.spoilerContent-32CqO- {
+background-color: var(--textarea-block-color) !important;
+}
 
 /* add inline background */
 .markup-eYLPri code.inline,
