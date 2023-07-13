@@ -87,11 +87,6 @@
 	border-radius: 6px;
 }
 
-/* DM list round corners */
-.container-32HW5s {
-	border-radius: var(--card-radius);
-}
-
 /* make spoiler visible */
 .spoilerContent-32CqO-.hidden-2lQZ5q,
 .spoilerContent-32CqO- {
@@ -234,7 +229,7 @@ background-color: var(--textarea-block-color) !important;
     background-color: unset;
     border-bottom: 1px solid var(--card-color);
 }
-.card-2L21B2.cardPrimaryEditable-2mz_3i.card-16VQ8C {
+.cardPrimary-pAe8Ed.editable-2xfXMr {
     border-style: solid !important;
     border-width: 1px !important;
     border-color: transparent !important;
@@ -368,15 +363,6 @@ input.timestamp-input {
 .timestamp-input-dropdown {
     background: none;
     border: none;
-}
-
-/* popout channel permissions */
-.popout-TdhJ6Z,
-.container-8Futzw,
-.role-2TIOKu {
-	background-color: var(--popout-color);
-	border-radius: var(--popout-radius);
-	backdrop-filter: none;
 }
 
 /* stream participants on stream display */
