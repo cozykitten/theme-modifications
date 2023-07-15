@@ -106,23 +106,20 @@
 .markup-eYLPri code {
 	--diff: (var(--main-content-opacity) - 0.55);
     background-color: rgba(var(--card-rgb), calc( max( (min(var(--diff), 0) / var(--diff)), var(--code-bg-enabled) ) * var(--card-opacity)));
-    border-radius: calc(var(--message-radius)/2);
+    border-radius: calc(var(--card-radius)/2);
 }
 
 /* add text container background */
-.textContainer-36wgKK {
-    background-color: var(--card-color);
+.newMosaicStyle-2jdUaP .textContainer-36wgKK { /* header only element */
 	box-shadow: none;
+	border-bottom: 1px solid var(--card-color);
 }
-.embedWrapper-1MtIDg.container-rr3Ruk {
-	border-radius: var(--message-radius);
-	box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.25);
-}
-.newMosaicStyle-2jdUaP .footer-GXWBBp {
-    border-top: 1px solid var(--card-color);
+.newMosaicStyle-2jdUaP { /* head & body element */
+	border-radius: var(--card-radius);
+	box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 25%);
 }
 
-/* header separated items (head & body box) */
+/* header separated items (head & body element) */
 .bd-addon-list .bd-addon-card, /* bd plugins & themes */
 .authedApp-8q3NA9, /* authorised apps */
 .tier-3CS7-p, /* server settings -> sticker */
@@ -151,12 +148,6 @@
 /* embed default border accent color */
 .attachment-1PZZB2, .embedFull-1HGV2S {
 	border-left: 4px solid hsla(var(--accent-hsl), var(--accent-opacity));
-}
-
-/* invites bg and border */
-.inviteSplash-2nkLRX {
-	border-top-right-radius: var(--card-radius);
-	border-top-left-radius: var(--card-radius);
 }
 
 /* dm list fix */
@@ -192,11 +183,6 @@
 
 /*	TRANSLUCENCY FIXES		*/
 
-/* search bar matches actual sidebar colour */
-.searchResultsWrap-5RVOkx {
-  background-color: rgba( var(--main-rgb), calc( (var(--sidebar-opacity) - var(--main-content-opacity)) / (1 - var(--main-content-opacity)) ));
-}
-
 /* bot tags */
 .px-MnE_OR.botTag-7aX5WZ,
 .botTagRegular-kpctgU {
@@ -217,36 +203,9 @@
     background-color: unset;
 }
 
-/* integration permissions settings cards */
-.cardHeader-3d6H8N {
-    background-color: unset;
-    border-bottom: 1px solid var(--card-color);
-}
-.cardPrimary-pAe8Ed.editable-2xfXMr {
-    border-style: solid !important;
-    border-width: 1px !important;
-    border-color: transparent !important;
-}
-
-/* integration permission switches radiogroup */
-.group-1-kPpw {
-    background-color: var(--card-color);
-    border-radius: var(--button-radius);
-    border: none;
-    overflow: hidden;
-}
-
 /* view as role disable button */
 .button-29sJG8.button-ejjZWC.lookOutlined-3RTC7c.colorWhite-Eshn2o.grow-2T4nbg {
     margin-right: 178px;
-}
-
-/* roles edit / view button */
-.roleRow-230vCm:hover .button-1_oXub {
-    background-color: var(--background-modifier-active)!important;
-}
-.roleRow-230vCm:hover .button-1_oXub:hover {
-    background-color: var(--background-modifier-hover) !important;
 }
 
 /* user profile on dm sidebar */
@@ -267,14 +226,6 @@
 /* attachment bg */
 .upload-vLbqu- {
 	background-color: var(--popout-color);
-}
-
-/* quickreact emoji in contect menu */
-.button-1zW0-r {
-	background-color: var(--card-color);
-}
-.button-1zW0-r:hover {
-	background-color: var(--card-color-hover);
 }
 
 /* channel user count */
@@ -304,41 +255,6 @@
 /* expanded folder icon colour */
 .expandedFolderIconWrapper-3RwQpD svg path {
 	fill: var(--accent-text-color);
-}
-
-/* server stickers circular hover buttons */
-.action-2YPPom {
-    background-color: var(--card-color);
-}
-
-/* sticker progress bar */
-.foreground-3_3Pgi {
-    color: hsla(var(--accent-hsl), var(--accent-opacity));
-}
-.theme-dark .tierAccomplished-1I5NaT,
-.theme-dark .tierCurrent-2nowYi,
-.theme-dark .tierFirst-1Vn3wS {
-    background: hsla(var(--accent-hsl), var(--accent-opacity));
-}
-.theme-dark .tierInProgress-1vFUnw {
-	background: var(--card-color);
-}
-
-/* server insights */
-.developerPortalCtaWrapper-2PniQs {
-	background-color: var(--card-color);
-}
-.error-2568aZ {
-    background-color: var(--card-color);
-    border-radius: var(--card-radius);
-}
-
-/* video settings video test */
-.cameraWrapper-nG8dpo {
-    background: var(--card-color);
-    border-radius: var(--card-radius);
-    border-color: hsla(var(--accent-hsl), var(--accent-opacity));
-    border-width: 2px;
 }
 
 
@@ -394,16 +310,5 @@ input.timestamp-input {
 }
 .statusDot-3YgDKA [mask*="url(#svg-mask-status-online"] { /*profiles settings*/
 	fill: hsla(var(--accent-hsl), 0.9);
-    filter: saturate(var(--saturation-factor));
-}
-
-/* saturation fix until discord fixes their shit */
-.wrapper-3Un6-K .pointerEvents-2KjWnj { /*member & dm list & userpopout, etc*/
-	filter: saturate(var(--saturation-factor));
-}
-.wrapper-3Un6-K .mask-1y0tyc.svg-1G_H_8 svg [width="25"][height="15"] { /*avatar*/
-	filter: saturate(var(--saturation-factor));
-}
-.status-12NUUC .mask-3tgVZv rect { /*dm open*/
     filter: saturate(var(--saturation-factor));
 }
