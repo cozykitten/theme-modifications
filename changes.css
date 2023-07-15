@@ -110,7 +110,8 @@
 }
 
 /* add text container background */
-.newMosaicStyle-2jdUaP .textContainer-36wgKK { /* header only element */
+.newMosaicStyle-2jdUaP .textContainer-36wgKK, /* header only element */
+.modalTextContainer-1FUO2W {
 	box-shadow: none;
 	border-bottom: 1px solid var(--card-color);
 }
