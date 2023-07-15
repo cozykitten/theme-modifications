@@ -148,7 +148,7 @@
 
 /* embed default border accent color */
 .attachment-1PZZB2, .embedFull-1HGV2S {
-	border-left: 4px solid hsla(var(--accent-hsl), var(--accent-opacity));
+	border-left: 4px solid hsla(var(--accent-hsl), var(--accent-opacity)) !important;
 }
 
 /* dm list fix */
