@@ -220,6 +220,11 @@
     background: transparent;
 }
 
+/* saturation filter on avatar status indicators */
+.wrapper-3Un6-K .pointerEvents-2KjWnj {
+  filter: saturate(var(--saturation-factor));
+}
+
 
 
 /*	ADDING TRANSLUCENCY		*/
@@ -256,6 +261,23 @@
 /* expanded folder icon colour */
 .expandedFolderIconWrapper-3RwQpD svg path {
 	fill: var(--accent-text-color);
+}
+
+/* user settings voice & video */
+.cameraWrapper-nG8dpo {
+  background: var(--card-color);
+  border-radius: var(--card-radius);
+  border-color: hsla(var(--accent-hsl), var(--accent-opacity));
+  border-width: 2px;
+}
+
+.backgroundOption-2mIYjm .backgroundOptionRing-1vvQ0C {
+  border-radius: var(--card-radius);
+  border-color: hsla(var(--accent-hsl), var(--accent-opacity));
+}
+.backgroundOption-2mIYjm .backgroundOptionInner-SSz19O {
+  background: var(--card-color);
+  border-radius: var(--card-radius);
 }
 
 
