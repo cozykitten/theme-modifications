@@ -210,7 +210,7 @@
 }
 
 /* user profile on dm sidebar */
-.profileColors-2AgAV4 {
+.userPanelOuter-XfFELn.profileColors-2AgAV4 {
     --profile-gradient-primary-color: var(--popout-color) !important;
     --profile-gradient-secondary-color: var(--popout-color) !important;
     --profile-gradient-overlay-color: transparent !important;
