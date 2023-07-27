@@ -1,0 +1,90 @@
+/**
+ * @name Translucence_Futaribeya
+ * @version 1.0.6.3
+ * @description A translucent/frosted glass Discord theme
+ * @author CapnKitten
+ *
+ * @website http://github.com/CapnKitten
+ * @source https://github.com/CapnKitten/BetterDiscord/blob/master/Themes/Translucence/css/source.css
+ * @donate https://paypal.me/capnkitten
+ * @invite jzJkA6Z
+ */
+
+@import url(https://cozykitten.github.io/theme-modifications/changes.css);
+
+:root {
+	/* app */
+	--app-bg: url(https://cdn.discordapp.com/attachments/942274268056657981/992827961365516298/Futaribeya-bg-upscaled-blur-all.png);
+	--app-blur: 0px;
+	--app-margin: 0px;
+	--app-radius: 16px;
+	
+	/* accent colour */
+	--accent-hue: 347;
+	--accent-saturation: 70%;
+	--accent-lightness: 82%;
+	--accent-opacity: 0.65;
+	--accent-hsl: var(--accent-hue),var(--accent-saturation),var(--accent-lightness);
+	--accent-text-color: rgba(255, 255, 255, 0.85);
+	
+	--background-modifier-hover: rgba(255,255,255,0.125);
+	--background-modifier-selected: rgba(241, 177, 191, 0.65);
+	
+	/* main content */
+	--main-rgb: 20, 19, 18;
+	--main-content-opacity: 0.6;
+	--sidebar-opacity: 0.65;
+	
+	--main-content-color: rgba(var(--main-rgb), var(--main-content-opacity));
+	--sidebar-color: rgba(var(--main-rgb), var(--sidebar-opacity));
+	
+	/* messages */
+	--message-color: rgba(0, 0, 0, 0);
+	--message-padding-top: 0px;
+	--message-padding-side: 2px;
+	--message-radius: 16px;
+	
+	--code-bg-enabled: 1;
+	
+	/* mentions */
+	--mention-hue: 24;
+	--mention-saturation: 60%;
+	--mention-lightness: 78%;
+	--mention-opacity: 0.85;
+	
+	--reply-hue: 347;
+	--reply-saturation: 70%;
+	--reply-lightness: 82%;
+	--reply-opacity: 0.65;
+	
+	/* popouts */
+	--popout-color: rgba(12, 11, 10, 0.2);
+	--popout-blur: 2px;
+	
+	/* cards */
+	--card-rgb: 0, 0, 0;
+	--card-opacity: 0.125;
+	--card-color: rgba(var(--card-rgb), var(--card-opacity));
+	--card-color-hover: rgba(236, 221, 227, 0.125);
+	--card-color-select: rgba(246, 210, 218, 0.5); /*	H, S 95%, L 109%	*/
+	
+	--textarea-block-color: rgba(0, 0, 0, 0.2);
+	
+	/* text */
+	--textarea-color: 255,255,255;
+	--textarea-alpha: 0.1;
+	--textarea-alpha-focus: 0.015;
+	--textarea-text-color: rgb(255, 255, 255);
+	--textarea-radius: 22px;  /*	-	*/
+	--text-normal: rgb(235, 235, 235);
+	--textarea-block-text-color: #ddd;
+	
+	/* app text */
+	--interactive-normal: #ccc;
+	--interactive-hover: #eee;
+	--interactive-active: #fff;
+	--interactive-muted: #777; /*	-	*/
+	
+	--scrollbar-opacity: 0.1;
+	--scrollbar-opacity-hover: 0.15;
+}
