@@ -1,18 +1,23 @@
-    window.onload = function() {
+    window.onload = () => {
         // Parse the query string
-        var params = new URLSearchParams(window.location.search);
+        const params = new URLSearchParams(window.location.search);
         
         // Get the code from the query string
-        var code = params.get('code');
+        const code = params.get('code');
         
         // Get the token from the URL fragment
-        var token = new URL(window.location.href).hash.split('token=', 2)[1].split('&', 1)[0];
+        //const token = new URL(window.location.href).hash.split('token=', 2)[1].split('&', 1)[0];
+
+        // Get the state parameter
+        const state = params.get('state');
         
         // Display the code or token
         if (code) {
-            document.getElementById('message').textContent = 'Code: ' + code;
-        } else if (token) {
-            document.getElementById('message').textContent = 'Token: ' + token;
+            if (state) {
+            document.getElementById('message').textContent = 'Code: ' + code + '\nState: ' + state;
+            } else {
+            document.getElementById('message').textContent = 'Invalid state parameter.';
+            }
         } else {
             document.getElementById('message').textContent = 'No code or token received.';
         }
