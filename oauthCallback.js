@@ -14,9 +14,10 @@
         // Display the code or token
         if (code) {
             if (state) {
-            document.getElementById('message').textContent = 'Code: ' + code + '\nState: ' + state;
+                document.getElementById('message').textContent = 'Code: ' + code;
+                document.getElementById('state').textContent = 'State: ' + state;
             } else {
-            document.getElementById('message').textContent = 'Invalid state parameter.';
+                document.getElementById('message').textContent = 'Invalid state parameter.';
             }
         } else {
             document.getElementById('message').textContent = 'No code or token received.';
