@@ -17,4 +17,3 @@
             document.getElementById('message').textContent = 'No code or token found in the URL.';
         }
     };
-    ```
