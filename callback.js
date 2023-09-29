@@ -14,6 +14,6 @@
         } else if (token) {
             document.getElementById('message').textContent = 'Token: ' + token;
         } else {
-            document.getElementById('message').textContent = 'No code or token found in the URL.';
+            document.getElementById('message').textContent = 'No code or token received.';
         }
     };
