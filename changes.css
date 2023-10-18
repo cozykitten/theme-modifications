@@ -13,8 +13,8 @@
 
 
 
-/*	windows-titlebar (discordstyles.github.io @Gibbu @Tropix126)	*/
-.platform-win .typeWindows-2-g3UY {
+/*	windows-titlebar (https://discordstyles.github.io/Addons/windows-titlebar.css @Gibbu @Tropix126)	*/
+.platform-win .typeWindows-3ILlhq {
   height: 10px;
   margin-top: 0;
   position: absolute;
@@ -24,27 +24,24 @@
   background: transparent;
 }
 /* - if app margin is used - *//*
-.platform-win .winButtonClose-3Q8ZH5 {
+.platform-win .winButtonClose-23zAIt {
   border-top-right-radius: var(--app-radius); 
 }*/
-.platform-win .winButton-3UMjdg {
+.platform-win .winButton-3SigSb {
   position: relative;
   top: var(--app-margin);
   right: var(--app-margin);
   height: 48px;
   width: 40px;
 }
-.platform-win .winButton-3UMjdg:not(.winButtonClose-3Q8ZH5):hover {
+.platform-win .winButton-3SigSb:not(.winButtonClose-23zAIt):hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .platform-win .container-ZMc96U {
   padding-right: var(--TB-header-padding);
 }
-.platform-win .wordmarkWindows-2dq6rw {
+.platform-win .wordmarkWindows-1rsity {
   display: none;
-}
-.platform-win #app-mount.bd-detached-editor .winButton-3UMjdg {
-  right: 30%;
 }
 .platform-win .closeButton-30b1gR {
   right: unset;
