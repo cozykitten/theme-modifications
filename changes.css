@@ -58,12 +58,12 @@
 	border-radius: 0px;
 	overflow: hidden;
 } 
-/* remove threadSidebarOpen rounded corners !!*/
+/* remove threadSidebarOpen rounded corners */
 .chat__52833.threadSidebarOpen_fa231d,
 .container_def45c {
 	border-radius: 0px;
 }
-/* give threadSidebar resize handle background colour !!*/
+/* give threadSidebar resize handle background colour */
 .resizeHandle_f1a098 {
 	background-color: var(--main-content-color);
 }
@@ -85,7 +85,7 @@
 /* add inline background */
 
 
-/* channel and role icons top of channel !!*/
+/* channel and role icons top of channel */
 .emptyChannelIcon__1a1ba,
 .iconWrapper__85630,
 .role__697fe {
