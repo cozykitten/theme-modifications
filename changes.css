@@ -114,7 +114,6 @@
 .bd-addon-list .bd-addon-card, /* bd plugins & themes */
 .authedApp__51b26, /* authorised apps */
 .tier_d16770, /* server settings -> sticker */
-/*.checklistContainer-12xGp5,  server settings -> partner programme */
 .checklist__88646, /* server settings -> discovery */
 .connectContainer__8050b { /* connections */
     box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 25%);
@@ -123,7 +122,6 @@
 .bd-addon-list .bd-addon-header,
 .authedApp__51b26 .marginBottom20__64605,
 .tierHeaderLocked__4d099, .tierHeaderUnlocked_cc60fa,
-/*.checklistHeader-3liG7E,*/
 .header_d08072,
 .connectContainer__8050b .connectHeader__04762,
 .enableContainer__0945b { /* welcome screen, no header & body class for this */
@@ -175,9 +173,8 @@
 
 /*	TRANSLUCENCY FIXES		*/
 
-/* bot tags */
-.px__97c6b.botTag__4211a,
-.botTagRegular_c89c9a {
+/* bot tags (in member list & chat)*/
+.botTag__4211a.botTagRegular_c89c9a {
     background-color: hsla(var(--accent-hue), calc(var(--accent-saturation) * var(--saturation-factor)), var(--accent-lightness), var(--accent-opacity));
 }
 
@@ -217,10 +214,7 @@
 }
 
 /* saturation filter on avatar status indicators */
-.wrapper_edb6e0 .pointerEvents_33f6a { /*member list & status popout*/
-	filter: saturate(var(--saturation-factor));
-}
-.wrapper_edb6e0 .mask__1979f.svg_f5b652 svg [width="25"][height="15"] { /*avatar & dm list*/
+.wrapper_edb6e0 .pointerEvents__33f6a { /*member list & status popout & dm list*/
 	filter: saturate(var(--saturation-factor));
 }
 
