@@ -1,5 +1,5 @@
 /**
- * @name Translucence_kokomi
+ * @name Translucence_purple
  * @version 1.0.6.3
  * @description A translucent/frosted glass Discord theme
  * @author CapnKitten
@@ -14,26 +14,26 @@
 
 :root {
 	/* app */
-	--app-bg: url(https://raw.githubusercontent.com/cozykitten/theme-modifications/main/bg/kokomi-water-01.png);
-	--app-blur: 1px;
+	--app-bg: url(https://raw.githubusercontent.com/cozykitten/theme-modifications/main/bg/purple-109311603_p0-2.png);
+	--app-blur: 0px;
 	--app-margin: 0px;
 	--app-radius: 16px;
 	
 	/* accent colour */
-	--accent-hue: 212;
-	--accent-saturation: 68%;
-	--accent-lightness: 75.5%;
+	--accent-hue: 320;
+	--accent-saturation: 42%;
+	--accent-lightness: 71%;
 	--accent-opacity: 0.65;
 	--accent-hsl: var(--accent-hue),var(--accent-saturation),var(--accent-lightness);
 	--accent-text-color: rgba(255, 255, 255, 0.85);
 	
 	--background-modifier-hover: rgba(255,255,255,0.125);
-	--background-modifier-selected: rgba(150, 190, 235, 0.65);
+	--background-modifier-selected: rgba(212, 150, 191, 0.65);
 	
 	/* main content */
-	--main-rgb: 10, 18, 22;
-	--main-content-opacity: 0.45;
-	--sidebar-opacity: 0.5;
+	--main-rgb: 20, 19, 19;
+	--main-content-opacity: 0.60;
+	--sidebar-opacity: 0.65;
 	
 	--main-content-color: rgba(var(--main-rgb), var(--main-content-opacity));
 	--sidebar-color: rgba(var(--main-rgb), var(--sidebar-opacity));
@@ -47,28 +47,28 @@
 	--code-bg-enabled: 1;
 	
 	/* mentions */
-	--mention-hue: 332;
-	--mention-saturation: 63%;
-	--mention-lightness: 79%;
+	--mention-hue: 250;
+	--mention-saturation: 44%;
+	--mention-lightness: 78%;
 	--mention-opacity: 0.85;
 	
-	--reply-hue: 212;
-	--reply-saturation: 68%;
-	--reply-lightness: 75.5%;
+	--reply-hue: 320;
+	--reply-saturation: 42%;
+	--reply-lightness: 71%;
 	--reply-opacity: 0.65;
 	
 	/* popouts */
-	--popout-color: rgba(4, 6, 12, 0.15);
+	--popout-color: rgba(12, 11, 11, 0.2);
 	--popout-blur: 2px;
 	
 	/* cards */
 	--card-rgb: 0, 0, 0;
-	--card-opacity: 0.1;
+	--card-opacity: 0.125;
 	--card-color: rgba(var(--card-rgb), var(--card-opacity));
-	--card-color-hover: rgba(236, 221, 227, 0.1);
-	--card-color-select: rgba(190, 209, 240, 0.5); /*	H, S 92%, L 112%	*/
+	--card-color-hover: rgba(236, 221, 227, 0.125);
+	--card-color-select: rgba(232, 206, 224, 0.5); /*	H, S 87%, L 109%	*/
 	
-	--textarea-block-color: rgba(0, 0, 0, 0.15);
+	--textarea-block-color: rgba(0, 0, 0, 0.2);
 	
 	/* text */
 	--textarea-color: 255,255,255;
