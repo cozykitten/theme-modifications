@@ -1,4 +1,5 @@
 @import url(https://cozykitten.github.io/BetterDiscord/Themes/Translucence/css/source.css);
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 :root {
 	/* windows-titlebar */				   
 	--TB-header-padding: 125px;
@@ -8,7 +9,7 @@
 	--server-folder-color: var(--popout-color);
 	
 	--code-bg-enabled: 0;
-	--font-display: Comfortaa, "Dancing Script Medium", Whitney !important;
+	--font-display: Comfortaa, Whitney !important;
 }
 
 
