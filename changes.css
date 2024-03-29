@@ -173,19 +173,26 @@
 /*	TRANSLUCENCY FIXES		*/
 
 /* bot tags (in member list & chat)*/
-.botTag__4211a.botTagRegular_c89c9a {
+.botTag_a52f38.botTagRegular_fc4b4a {
     background-color: hsla(var(--accent-hue), calc(var(--accent-saturation) * var(--saturation-factor)), var(--accent-lightness), var(--accent-opacity));
 }
 
 /* server icon context menu checkbox & radio button */
-.colorDefault__0b482 .checkbox__45366,
-.colorDefault__0b482 .radioSelection__41d1e {
+.colorDefault_e361cf .menuitemcheckbox,
+.colorDefault_e361cf .radioSelection__41d1e {
     color: hsla(var(--accent-hsl), 0.9);
 }
 
-/* remove border for no-auto-play attachments */
+/* remove border for no-auto-play attachments (unknown file types) */
+.attachment__06ca3,
 .attachment__06ca3.newMosaicStyle__235c9 {
 	border: none;
+}
+
+/* remove border for attachment download button */
+.nonMediaAttachment_ef83c1 {
+    background-color: var(--background-modifier-active);
+    outline: none;
 }
 
 /* ephemeral bot message */
@@ -197,12 +204,12 @@
 }
 
 /* view as role disable button */
-.lookOutlined__014b5.colorWhite__43488 {
+.lookOutlined__014b5.colorWhite__0033e {
     margin-right: 178px;
 }
 
 /* user profile on dm sidebar */
-.userPanelOuter__880e5.profileColors_ac6ab4 {
+.userPanelOuter_eb00b1.profileColors_ac6ab4 {
     --profile-gradient-primary-color: var(--popout-color) !important;
     --profile-gradient-secondary-color: var(--popout-color) !important;
     --profile-gradient-overlay-color: transparent !important;
@@ -276,6 +283,51 @@
 
 
 
+/* HIDE CLUTTER */
+
+/* discord premium advertising emoji in-chat selector */
+.premiumSectionDivider__2ed1a,
+.premiumEmoji_d4ce86,
+.premiumHeader_f73c14 {
+    display: none;
+}
+
+/* profile settings skin advertisements */
+.container__686c4 {
+	display: none;
+}
+
+
+
+/* ACCENT COLOUR ONLINE STATUS */
+
+/* saturation filter on avatar status indicators */
+.wrapper__3ed10 .pointerEvents__585e6, /*member & dm list & status popout*/
+.wrapper__3ed10 .mask_d5067d.svg_a6bf1c svg rect { /*avatar*/
+	filter: saturate(var(--saturation-factor));
+}
+
+/* accent colour as online colour */
+.wrapper__3ed10 .pointerEvents__585e6[mask*="url(#svg-mask-status-online"] { /*member & dm open, etc*/
+	fill: hsla(var(--accent-hsl), 0.9);
+}
+.wrapper__3ed10[aria-label*="Online"] .mask_d5067d.svg_a6bf1c > svg > rect { /*avatar & dm list //doesn't reliably work through .pointerEvents*/
+	fill: hsla(var(--accent-hsl), 0.9);
+}
+.accountProfilePopoutWrapper_d4887f .mask__3aa53 [mask*="url(#svg-mask-status-online"] .status__1c26d { /*avatar status picker*/
+	background-color: hsla(var(--accent-hue), calc(var(--accent-saturation) * var(--saturation-factor)), var(--accent-lightness), 0.9) !important;
+}
+/*[aria-label*="Online"].status-12NUUC .mask-3tgVZv rect { /*dm open //works through .pointerEvents
+    fill: hsla(var(--accent-hsl), 0.9);
+    filter: saturate(var(--saturation-factor));
+}*/
+.statusDot_c605a3 [mask*="url(#svg-mask-status-online"] { /*profiles settings*/
+	fill: hsla(var(--accent-hsl), 0.9);
+    filter: saturate(var(--saturation-factor));
+}
+
+
+
 /*	ADDITIONS	*/
 
 /* timestamps plugin 
@@ -308,35 +360,3 @@ input.timestamp-input {
 .checkmark-bW9BK8 {
 	background-color: var(--button-color);
 }*/
-
-/* discord premium advertising emoji in-chat selector */
-.premiumSectionDivider__8b7d8,
-.premiumEmoji__2dbd7,
-.premiumHeader_f78f97 {
-    display: none;
-}
-
-/* saturation filter on avatar status indicators */
-.wrapper__3ed10 .pointerEvents__33f6a, /*member & dm list & status popout*/
-.wrapper__3ed10 .mask__1979f.svg_f5b652 svg rect { /*avatar*/
-	filter: saturate(var(--saturation-factor));
-}
-
-/* accent colour as online colour */
-.wrapper__3ed10 .pointerEvents__33f6a[mask*="url(#svg-mask-status-online"] { /*member & dm open, etc*/
-	fill: hsla(var(--accent-hsl), 0.9);
-}
-.wrapper__3ed10[aria-label*="Online"] .mask__1979f.svg_f5b652 > svg > rect { /*avatar & dm list //doesn't reliably work through .pointerEvents*/
-	fill: hsla(var(--accent-hsl), 0.9);
-}
-.accountProfilePopoutWrapper_af829a .mask__5d7d8 [mask*="url(#svg-mask-status-online"] .status__1c26d { /*avatar status picker*/
-	background-color: hsla(var(--accent-hue), calc(var(--accent-saturation) * var(--saturation-factor)), var(--accent-lightness), 0.9) !important;
-}
-/*[aria-label*="Online"].status-12NUUC .mask-3tgVZv rect { /*dm open //works through .pointerEvents
-    fill: hsla(var(--accent-hsl), 0.9);
-    filter: saturate(var(--saturation-factor));
-}*/
-.statusDot__468f8 [mask*="url(#svg-mask-status-online"] { /*profiles settings*/
-	fill: hsla(var(--accent-hsl), 0.9);
-    filter: saturate(var(--saturation-factor));
-}
