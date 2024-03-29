@@ -56,7 +56,7 @@
 	overflow: hidden;
 } 
 /* remove threadSidebarOpen rounded corners */
-.chat__52833.threadSidebarOpen_fa231d,
+.chat__52833.threadSidebarOpen__62c31,
 .container__694a1 {
 	border-radius: 0px;
 }
@@ -85,8 +85,11 @@
 /* channel and role icons top of channel */
 .emptyChannelIcon_d45c50,
 .iconWrapper__85630,
-.role__697fe {
+.role__9690d {
     background-color: var(--card-color);
+}
+.role__9690d:hover {
+    background-color: var(--background-modifier-hover);
 }
 
 /* add back code background */
@@ -140,7 +143,7 @@
 }
 
 /* dm list fix */
-.interactiveSelected_ec846b:hover, .interactiveSelected_ec846b:active, .interactiveSelected_ec846b:focus-within {
+.interactiveSelected__689f0:hover, .interactiveSelected__689f0:active, .interactiveSelected__689f0:focus-within {
     background-color: var(--background-modifier-selected);
 }
 
@@ -173,7 +176,7 @@
 /*	TRANSLUCENCY FIXES		*/
 
 /* bot tags (in member list & chat)*/
-.botTag_a52f38.botTagRegular_fc4b4a {
+.botTagRegular_fc4b4a {
     background-color: hsla(var(--accent-hue), calc(var(--accent-saturation) * var(--saturation-factor)), var(--accent-lightness), var(--accent-opacity));
 }
 
@@ -238,7 +241,7 @@
 
 /* slider bar background */
 .bar_e58961 .barFill__1f56b {
-    background-color: var(--background-modifier-selected);
+    background-color: var(--background-modifier-selected) !important;
 }
 .theme-dark .bar_e58961, .theme-dark .markDash_dc3ae9 {
     background: var(--card-color) !important;
@@ -258,7 +261,7 @@
 }
 
 /* user settings voice & video */
-.soundButtonSettingContainer__548af {
+.soundButtonSettingContainer__3821b {
 	height: var(--input-height);
 	border-radius: var(--input-radius);
 	background-color: rgba(var(--textarea-color), var(--textarea-alpha));
@@ -270,15 +273,6 @@
   border-radius: var(--card-radius);
   border-color: hsla(var(--accent-hsl), var(--accent-opacity));
   border-width: 2px;
-}
-
-.backgroundOption-2mIYjm .backgroundOptionRing-1vvQ0C {
-  border-radius: var(--card-radius);
-  border-color: hsla(var(--accent-hsl), var(--accent-opacity));
-}
-.backgroundOption-2mIYjm .backgroundOptionInner-SSz19O {
-  background: var(--card-color);
-  border-radius: var(--card-radius);
 }
 
 
@@ -295,6 +289,11 @@
 /* profile settings skin advertisements */
 .container__686c4 {
 	display: none;
+}
+
+/* remove shop in dm list */
+li.channel__0aef5.container__3792d:not([aria-posinset]) {
+	display:none;
 }
 
 
