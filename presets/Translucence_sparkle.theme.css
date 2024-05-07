@@ -1,0 +1,98 @@
+/**
+ * @name Translucence_sparkle
+ * @version 1.0.6.3
+ * @description A translucent/frosted glass Discord theme
+ * @author CapnKitten
+ *
+ * @website http://github.com/CapnKitten
+ * @source https://github.com/CapnKitten/BetterDiscord/blob/master/Themes/Translucence/css/source.css
+ * @donate https://paypal.me/capnkitten
+ * @invite jzJkA6Z
+ */
+
+@import url(https://cozykitten.github.io/theme-modifications/changes.css);
+
+:root {
+	/* app */
+	--app-bg: url(https://raw.githubusercontent.com/cozykitten/theme-modifications/main/bg/Sparkle-831328-user_ryty8583-2.png);
+	--app-blur: 0px;
+	--app-margin: 0px;
+	--app-radius: 16px;
+	
+	/* accent colour */
+	--accent-hue: 359;
+	--accent-saturation: 52%;
+	--accent-lightness: 68%; /* keep lightness around 70 ± */
+	--accent-opacity: 0.65;
+	--accent-hsl: var(--accent-hue),var(--accent-saturation),var(--accent-lightness);
+	--accent-text-color: rgba(255, 255, 255, 0.85);
+	
+	--background-modifier-hover: rgba(255,255,255,0.125);
+	--background-modifier-selected: rgba(215, 130, 132, 0.65);
+	
+	/* main content */
+	--main-rgb: 20, 19, 19;
+	--main-content-opacity: 0.55;
+	--sidebar-opacity: 0.60;
+	
+	--main-content-color: rgba(var(--main-rgb), var(--main-content-opacity));
+	--sidebar-color: rgba(var(--main-rgb), var(--sidebar-opacity));
+	
+	/* messages */
+	--message-color: rgba(0, 0, 0, 0);
+	--message-padding-top: 0px;
+	--message-padding-side: 2px;
+	--message-radius: 16px;
+	
+	--code-bg-enabled: 1;
+	
+	/* mentions */
+	--mention-hue: 28;
+	--mention-saturation: 78%;
+	--mention-lightness: 72%;
+	--mention-opacity: 0.85;
+	
+	--reply-hue: 359;
+	--reply-saturation: 52%;
+	--reply-lightness: 68%;
+	--reply-opacity: 0.65;
+	
+	/* popouts */
+	--popout-color: rgba(12, 11, 11, 0.2);
+	--popout-blur: 2px;
+	
+	/* cards */
+	--card-rgb: 0, 0, 0;
+	--card-opacity: 0.15;
+	--card-color: rgba(var(--card-rgb), var(--card-opacity));
+	--card-color-hover: rgba(236, 196, 197, 0.125);
+	--card-color-select: rgba(232, 185, 186, 0.5); /*	match highest rgb value to 232	*/
+	
+	--textarea-block-color: rgba(0, 0, 0, 0.2);
+	
+	/* text */
+	--textarea-color: 255,255,255;
+	--textarea-alpha: 0.1;
+	--textarea-alpha-focus: 0.015;
+	--textarea-text-color: rgb(255, 255, 255);
+	--textarea-radius: 22px;  /*	-	*/
+	--text-normal: rgb(235, 235, 235);
+	--textarea-block-text-color: #ddd;
+	
+	/* app text */
+	--interactive-normal: #ccc;
+	--interactive-hover: #eee;
+	--interactive-active: #fff;
+	--interactive-muted: #777; /*	-	*/
+	
+	--scrollbar-opacity: 0.15;
+	--scrollbar-opacity-hover: 0.2;
+}
+.tutorialContainer__890ea .childWrapper__01b9c {
+    background-image: url(https://discord.com/assets/89c85520362bae970806619f146a3ef9.webp);
+    background-position: center;
+    background-size: contain;
+}
+.tutorialContainer__890ea .childWrapper__01b9c svg {
+    display: none;
+}
