@@ -25,7 +25,7 @@
   background: transparent;
 }
 /* - if app margin is used - *//*
-.platform-win .winButtonClose-23zAIt {
+.platform-win .winButtonClose__6396d {
   border-top-right-radius: var(--app-radius); 
 }*/
 .platform-win .winButton_f17fb6 {
@@ -84,7 +84,7 @@
 
 /* channel and role icons top of channel */
 .emptyChannelIcon_d45c50,
-.iconWrapper__85630,
+.iconWrapper__8795c,
 .role__9690d {
     background-color: var(--card-color);
 }
@@ -94,7 +94,7 @@
 
 /* add back code background */
 .markup_a7e664 code {
-	--diff: (var(--main-content-opacity) - 0.55);
+	--diff: (var(--main-content-opacity) - 0.5514);
     background-color: rgba(var(--card-rgb), calc( max( (min(var(--diff), 0) / var(--diff)), var(--code-bg-enabled) ) * var(--card-opacity)));
     border-radius: calc(var(--card-radius)/2);
 }
@@ -188,7 +188,7 @@
 
 /* remove border for no-auto-play attachments (unknown file types) */
 .attachment__06ca3,
-.attachment__06ca3.newMosaicStyle__235c9 {
+.attachment__06ca3.newMosaicStyle_b4aa24 {
 	border: none;
 }
 
@@ -243,7 +243,7 @@
 .bar_e58961 .barFill__1f56b {
     background-color: var(--background-modifier-selected) !important;
 }
-.theme-dark .bar_e58961, .theme-dark .markDash_dc3ae9 {
+.theme-dark .bar_e58961, .theme-dark .markDash__54545 {
     background: var(--card-color) !important;
 }
 
@@ -316,7 +316,7 @@ li.channel__0aef5.container__3792d:not([aria-posinset]) {
 .accountProfilePopoutWrapper_d4887f .mask__3aa53 [mask*="url(#svg-mask-status-online"] .status__1c26d { /*avatar status picker*/
 	background-color: hsla(var(--accent-hue), calc(var(--accent-saturation) * var(--saturation-factor)), var(--accent-lightness), 0.9) !important;
 }
-/*[aria-label*="Online"].status-12NUUC .mask-3tgVZv rect { /*dm open //works through .pointerEvents
+/*[aria-label*="Online"].status__2a4a6 .mask__3aa53 rect { /*dm open //works through .pointerEvents
     fill: hsla(var(--accent-hsl), 0.9);
     filter: saturate(var(--saturation-factor));
 }*/
@@ -343,7 +343,7 @@ input.timestamp-input {
 }*/
 
 /* stream participants on stream display 
-.scroller-3b1p7z.thin-31rlnD.scrollerBase-_bVAAt {
+.scroller__13d83.thin_b1c063.scrollerBase-_bVAAt {
 	background-color: var(--popout-color);
 	border-radius: var(--popout-radius);
 	box-shadow: var(--popout-shadow);
@@ -351,11 +351,11 @@ input.timestamp-input {
 }*/
 
 /* server topmost quickstart guide thingy 
-.card-PQEqCK {
+.card__3662a {
 	background-color: var(--card-color);
 	border-radius: var(--card-radius);
 	filter: saturate(var(--saturation-factor));
 }
-.checkmark-bW9BK8 {
+.checkmark__0c21a {
 	background-color: var(--button-color);
 }*/
