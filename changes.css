@@ -155,11 +155,11 @@
 }
 
 /* mentions be accent colour */
-.markup_d6076c .wrapper_a7c28c {
+.markup_d6076c .wrapper_bf1b19 {
   background-color: hsla(var(--accent-hsl), 0.25);
   color: hsl(var(--accent-hsl));
 }
-.markup_d6076c .wrapper_a7c28c:hover {
+.markup_d6076c .wrapper_bf1b19:hover {
   background-color: hsla(var(--accent-hsl), 0.475);
   color: hsl(var(--accent-hsl));
 }
