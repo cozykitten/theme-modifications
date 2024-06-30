@@ -171,6 +171,24 @@
     padding-right: 2px;
 }
 
+/* restore old reply / mention indicator */
+.repliedMessage_ec86aa {
+  transform: translateX(40px);
+}
+.repliedMessage_ec86aa:before {
+  border-color: var(--interactive-muted);
+  transform: translateX(0);
+}
+.wrapper_ec86aa.hasReply_ec86aa .avatar_ec86aa {
+  top: 0;
+}
+.wrapper_ec86aa.hasReply_ec86aa .avatarDecoration_ec86aa {
+  top: -2px;
+}
+.wrapper_ec86aa.mentioned_d5deea .repliedMessage_ec86aa:before {
+  border-color: var(--interactive-muted);
+}
+
 
 
 /*	TRANSLUCENCY FIXES		*/
