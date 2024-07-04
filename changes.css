@@ -66,16 +66,16 @@
 }
 
 /* more subtle mentions no flickering */
-.wrapper_ec86aa.mentioned_d5deea {
+.wrapper_f9f2ca.mentioned_d5deea {
   border-color: hsla(var(--mention-hsl), var(--mention-opacity));
   box-shadow: inset 0px 0px 4px 1px hsla(var(--mention-hsl), var(--mention-opacity)), 0px 0px 6px 1px hsla(var(--mention-hsl), var(--mention-opacity));
 }
-.wrapper_ec86aa.replying_d5deea {
+.wrapper_f9f2ca.replying_d5deea {
   border-color: hsla(var(--reply-hsl), var(--reply-opacity));
   box-shadow: inset 0px 0px 4px 1px hsla(var(--reply-hsl), var(--reply-opacity)), 0px 0px 6px 1px hsla(var(--reply-hsl), var(--reply-opacity));
 }
 /* mention border roundness */
-.wrapper_ec86aa {
+.wrapper_f9f2ca {
 	border-radius: 6px;
 }
 
@@ -179,13 +179,13 @@
   border-color: var(--interactive-muted);
   transform: translateX(0);
 }
-.wrapper_ec86aa.hasReply_ec86aa .avatar_ec86aa {
+.wrapper_f9f2ca.hasReply_ec86aa .avatar_ec86aa {
   top: 0;
 }
-.wrapper_ec86aa.hasReply_ec86aa .avatarDecoration_ec86aa {
+.wrapper_f9f2ca.hasReply_ec86aa .avatarDecoration_ec86aa {
   top: -2px;
 }
-.wrapper_ec86aa.mentioned_d5deea .repliedMessage_ec86aa:before {
+.wrapper_f9f2ca.mentioned_d5deea .repliedMessage_ec86aa:before {
   border-color: var(--interactive-muted);
 }
 
