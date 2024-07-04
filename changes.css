@@ -172,20 +172,20 @@
 }
 
 /* restore old reply / mention indicator */
-.repliedMessage_ec86aa {
+.repliedMessage_f9f2ca {
   transform: translateX(40px);
 }
-.repliedMessage_ec86aa:before {
+.repliedMessage_f9f2ca:before {
   border-color: var(--interactive-muted);
   transform: translateX(0);
 }
-.wrapper_f9f2ca.hasReply_ec86aa .avatar_ec86aa {
+.wrapper_f9f2ca.hasReply_f9f2ca .avatar_f9f2ca {
   top: 0;
 }
-.wrapper_f9f2ca.hasReply_ec86aa .avatarDecoration_ec86aa {
+.wrapper_f9f2ca.hasReply_f9f2ca .avatarDecoration_f9f2ca {
   top: -2px;
 }
-.wrapper_f9f2ca.mentioned_d5deea .repliedMessage_ec86aa:before {
+.wrapper_f9f2ca.mentioned_d5deea .repliedMessage_f9f2ca:before {
   border-color: var(--interactive-muted);
 }
 
