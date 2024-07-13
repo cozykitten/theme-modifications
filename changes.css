@@ -38,7 +38,7 @@
 .platform-win .winButton_a934d8:not(.winButtonClose_a934d8):hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.platform-win .container_e44302 {
+.platform-win .container_fc4f04 {
   padding-right: var(--TB-header-padding);
 }
 .platform-win .wordmarkWindows_a934d8 {
@@ -93,7 +93,7 @@
 }
 
 /* add back code background */
-.markup_d6076c code {
+.markup_f8f345 code {
 	--diff: (var(--main-content-opacity) - 0.5514);
     background-color: rgba(var(--card-rgb), calc( max( (min(var(--diff), 0) / var(--diff)), var(--code-bg-enabled) ) * var(--card-opacity)));
     border-radius: calc(var(--card-radius)/2);
@@ -137,7 +137,7 @@
 /* embed default border accent color */
 .attachment_a4623d,
 .embedFull_ad0b71,
-.embedCard_c6cefd,
+.embedCard_a0eae1,
 .container_c15230 {
 	border-left: 4px solid hsla(var(--accent-hsl), var(--accent-opacity));
 }
@@ -155,11 +155,11 @@
 }
 
 /* mentions be accent colour */
-.markup_d6076c .wrapper_bf1b19 {
+.markup_f8f345 .wrapper_bf1b19 {
   background-color: hsla(var(--accent-hsl), 0.25);
   color: hsl(var(--accent-hsl));
 }
-.markup_d6076c .wrapper_bf1b19:hover {
+.markup_f8f345 .wrapper_bf1b19:hover {
   background-color: hsla(var(--accent-hsl), 0.475);
   color: hsl(var(--accent-hsl));
 }
