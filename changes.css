@@ -305,12 +305,12 @@
 }
 
 /* profile settings skin advertisements */
-.container_da1432 {
+.premiumFeatureBorder_c6d722 {
 	display: none;
 }
 
 /* remove shop in dm list */
-li.channel_c91bad.container_b15955:not([aria-posinset]) {
+li.channel_c91bad.container_d91ad9:not([aria-posinset]) {
 	display:none;
 }
 
