@@ -85,10 +85,10 @@
 /* channel and role icons top of channel */
 .emptyChannelIcon_c2668b,
 .iconWrapper_ec583a,
-.role_deddac {
+.role_d70de6 {
     background-color: var(--card-color);
 }
-.role_deddac:hover {
+.role_d70de6:hover {
     background-color: var(--background-modifier-hover);
 }
 
@@ -130,7 +130,7 @@
 }
 
 /* remove backdrop-filter on message-accessories */
-.wrapper_ef319f {
+.wrapper_f7e168 {
     backdrop-filter: none;
 }
 
