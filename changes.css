@@ -10,6 +10,9 @@
 	
 	--code-bg-enabled: 0;
 	--font-display: Comfortaa, Whitney !important;
+	
+	/* Translucence */
+	--server-folder-color: hsla(var(--accent-hsl),var(--accent-opacity));
 }
 
 
@@ -132,6 +135,14 @@
 /* remove backdrop-filter on message-accessories */
 .wrapper_f7ecac {
     backdrop-filter: none;
+	border: none;
+}
+.popoverReactionHoverBar_f84418:hover {
+	border: none;
+}
+.hoverBarButton_f84418 {
+    padding: 4px;
+    border-radius: calc(var(--card-radius)/2);
 }
 
 /* embed default border accent color */
@@ -266,9 +277,9 @@
 }
 
 /* folder head background */
-.folder__48112, .folder__48112:hover {
-	background-color: hsla(var(--accent-hsl),var(--accent-opacity));
-}
+/*.folder__48112, .folder__48112:hover {
+	/background-color: hsla(var(--accent-hsl),var(--accent-opacity));
+}*/
 /* folder closed overlay colour */
 .folderIconWrapper__48112[style*="background-color: rgba(88"] {
 	background-color: transparent !important;
@@ -291,6 +302,17 @@
   border-radius: var(--card-radius);
   border-color: hsla(var(--accent-hsl), var(--accent-opacity));
   border-width: 2px;
+}
+
+/* add reactions button next to reactions */
+.reactionBtn__23977.forceShow__23977 {
+	background-color: transparent;
+	border: none;
+	border-radius: var(--message-radius);
+}
+.reactionBtn__23977.forceShow__23977:hover {
+	background-color: var(--background-primary);
+	border-color: unset;
 }
 
 
