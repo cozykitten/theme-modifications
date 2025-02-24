@@ -144,6 +144,9 @@
     padding: 4px;
     border-radius: calc(var(--card-radius)/2);
 }
+.hoverBarButton_f84418:active {
+    padding: 4px;
+}
 
 /* embed default border accent color */
 .fileWrapper__0ccae,
@@ -311,8 +314,13 @@
 	border-radius: var(--message-radius);
 }
 .reactionBtn__23977.forceShow__23977:hover {
-	background-color: var(--background-primary);
+	background-color: var(--background-modifier-hover);
 	border-color: unset;
+}
+
+/* reply bar on reply chain "create thread" promt */
+.stackedBars__74017 .threadSuggestionBar__841c8 {
+    background: transparent;
 }
 
 
