@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 :root {
 	/* windows-titlebar */				   
-	--TB-header-padding: 125px;
+	--TB-header-padding: 285px;
+	--custom-app-top-bar-height: 0;
 	
 	--switch-slider-color: var(--card-color);
 	--switch-knob-color: var(--card-color);
@@ -17,34 +18,21 @@
 
 
 
-/*	windows-titlebar (https://discordstyles.github.io/Addons/windows-titlebar.css @Gibbu @Tropix126)	*/
-.platform-win .typeWindows__421ed {
-  height: 10px;
-  margin-top: 0;
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  background: transparent;
-}
+/*	windows-titlebar*/
 /* - if app margin is used - *//*
 .platform-win .winButtonClose__421ed {
   border-top-right-radius: var(--app-radius); 
 }*/
-.platform-win .winButton__421ed {
-  position: relative;
-  top: var(--app-margin);
+.trailing_c38106, .winButton_c38106 {
+  top: 24px;
   right: var(--app-margin);
   height: 48px;
   width: 40px;
 }
-.platform-win .winButton__421ed:not(.winButtonClose__421ed):hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
 .platform-win .container__9293f {
   padding-right: var(--TB-header-padding);
 }
-.platform-win .wordmarkWindows__421ed {
+.platform-win .title_c38106 {
   display: none;
 }
 
@@ -53,10 +41,8 @@
 /*	CHANGES		*/
 
 /* remove border app>bg>layer */
-.layers__160d8 {
-	margin: var(--app-margin);
+.visual-refresh .content_c48ade {
 	border-radius: 0px;
-	overflow: hidden;
 } 
 /* remove threadSidebarOpen rounded corners */
 .chat_f75fb0.threadSidebarOpen_f75fb0,
@@ -64,7 +50,7 @@
 	border-radius: 0px;
 }
 /* give threadSidebar resize handle background colour */
-.resizeHandle__01ae2 {
+.visual-refresh .resizeHandle__01ae2 {
 	background-color: var(--main-content-color);
 }
 
@@ -252,6 +238,14 @@
     --profile-body-background-color: var(--popout-color) !important;
     --profile-body-divider-color: var(--background-modifier-accent) !important;
     background: transparent;
+}
+
+/* date pills in chat area */
+.visual-refresh .content__908e2 {
+	width: 120px;
+    padding: 2px 0;
+    background-color: var(--message-color);
+    text-align: center;
 }
 
 
