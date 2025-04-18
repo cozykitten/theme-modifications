@@ -269,7 +269,7 @@
 }
 
 /* user profile on dm sidebar */
-.outer_c0bea0 {
+.outer_c0bea0.panel_c0bea0 {
     --profile-gradient-primary-color: var(--popout-color) !important;
     --profile-gradient-secondary-color: var(--popout-color) !important;
     --profile-gradient-overlay-color: transparent !important;
@@ -278,7 +278,7 @@
     --profile-body-divider-color: var(--background-modifier-accent) !important;
     background: transparent;
 }
-.overlay_c0bea0 {
+.outer_c0bea0.panel_c0bea0 .overlay_c0bea0 {
     background-color: var(--background-modifier-accent);
 }
 
