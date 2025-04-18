@@ -20,8 +20,7 @@
 
 /* windows-titlebar - @CapnKitten */
 .platform-win.visual-refresh .base_c48ade {
-  grid-template-areas: "guildsList notice notice" "guildsList channelsList page";
-  grid-template-rows: [top] min-content [noticeEnd] 1fr [end];
+  grid-template-rows: [top] 0px [titleBarEnd] min-content [noticeEnd] 1fr [end];
 }
 .platform-win.visual-refresh .layers__160d8 {
   margin: var(--app-margin);
@@ -34,31 +33,36 @@
   padding-left: 0;
   z-index: 2;
 }
-.platform-win .base_c48ade .title_c38106 {
+.platform-win .title_c38106 {
   display: none;
 }
-.platform-win .base_c48ade .trailing_c38106 {
+.platform-win .trailing_c38106 {
   position: absolute;
   height: 50px;
   top: var(--app-margin);
   right: 0;
 }
-.platform-win .base_c48ade .winButtons_c38106,
-.platform-win .base_c48ade .winButton_c38106 {
+.platform-win .winButtons_c38106,
+.platform-win .winButton_c38106 {
   height: inherit;
 }
-.platform-win .base_c48ade .winButton_c38106 {
+.platform-win .winButton_c38106 {
   width: 40px;
 }
 /* if app-radius is used *//*
-.platform-win .base_c48ade .winButtonClose_c38106 {
+.platform-win .winButtonClose_c38106 {
   border-top-right-radius: var(--app-radius);
 } */
-.platform-win .base_c48ade .winButtonsWithDivider_c38106:before {
+.platform-win .winButtonsWithDivider_c38106:before {
   height: calc(100% - var(--space-24));
 }
 .platform-win .container__9293f {
   padding-right: var(--TB-header-padding);
+}
+/* settings page remove top margin and app-radius */
+.visual-refresh .standardSidebarView__23e6b {
+    /margin-top: 0;
+    border-radius: none;
 }
 
 
