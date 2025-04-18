@@ -62,7 +62,7 @@
 /* settings page remove top margin and app-radius */
 .visual-refresh .standardSidebarView__23e6b {
     margin-top: 0;
-    border-radius: none;
+    border-radius: 0px;
 }
 
 
