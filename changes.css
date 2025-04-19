@@ -327,8 +327,11 @@
     padding-top: 4px;
 }
 .visual-refresh .flash__03436[data-flash=true] {
-    background-color: hsla(var(--accent-hsl), 0.3) !important;
+    background-color: hsla(var(--accent-hsl), 0.3);
     transition: 200ms ease-out background-color;
+}
+.backgroundFlash__5126c:not([style$="0);"]) {
+	background-color: unset !important;
 }
 
 
