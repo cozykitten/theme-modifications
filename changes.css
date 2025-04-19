@@ -1,4 +1,4 @@
-@import url(https://cozykitten.github.io/BetterDiscord/Themes/Translucence/css/source.css);
+@import url(https://capnkitten.github.io/BetterDiscord/Themes/Translucence/css/source.css);
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 :root {
 	/* windows-titlebar */				   
@@ -228,9 +228,39 @@
   border-color: var(--interactive-muted);
 }
 
+/* remove borders */
+.visual-refresh .menu_c1e9c4 {
+    border: none;
+}
+.visual-refresh .searchBar__97492 {
+    border: none;
+    background-color: var(--background-modifier-hover);
+    border-radius: var(--button-radius);
+    padding: 2px 6px;
+}
+.searchBar__97492 .icon__97492 {
+    height: auto;
+}
+.visual-refresh .bottomBar__0f481 {
+    background-color: var(--card-color-hover);
+    border-radius: var(--popout-radius);
+    border: none;
+}
+
 
 
 /*	TRANSLUCENCY FIXES		*/
+
+/* search bar sidebar fix */
+.visual-refresh .searchResultsWrap_a9e706 {
+    background-color: rgba(var(--main-rgb), calc(var(--sidebar-opacity) - var(--main-content-opacity)));
+    border: none;
+}
+
+/* guild member sidebar fix */
+.visual-refresh .container_c8ffbb {
+    border-left: none;
+}
 
 /* bot tags (in member list & chat)*/
 .botTagRegular__82f07 {
@@ -288,6 +318,17 @@
     padding: 2px 0;
     background-color: var(--message-color);
     text-align: center;
+}
+
+/* backgroundflash on linked message */
+.visual-refresh .flash__03436 {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    padding-top: 4px;
+}
+.visual-refresh .flash__03436[data-flash=true] {
+    background-color: hsla(var(--accent-hsl), 0.3) !important;
+    transition: 200ms ease-out background-color;
 }
 
 
@@ -364,6 +405,25 @@
 .overviewContainerWithVideo__95856 {
     background-color: var(--card-color);
     border-radius: var(--card-radius);
+}
+
+/* member list items */
+.visual-refresh .container__91a9d {
+    border-radius: var(--list-item-radius);
+}
+.visual-refresh .childContainer__91a9d, /* member list items */
+.visual-refresh .link__972a0 { /* dm list items */
+    border-radius: inherit;
+    padding: 0;
+}
+.visual-refresh .memberInner__5d473,/* member list items */
+.visual-refresh.density-default .layout__20a53 { /* dm list items */
+    padding: 6px 8px;
+	height: auto;
+}
+/* dm list items */
+.visual-refresh .channel__972a0 {
+    margin: 0 8px;
 }
 
 
