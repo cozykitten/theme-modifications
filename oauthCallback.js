@@ -6,30 +6,33 @@ window.onload = async () => {
     const code = params.get('code');
     
     // Get the state parameter
-    const state = params.get('state');
+    const encodedstate = params.get('state');
     
     // Display the code or token
     let message;
     if (code) {
-        if (state) {
+        if (encodedState) {
+            const decodedState = atob(encodedState);
+            const state = decodedState.slice(0, 6);
+            const webhookId = decodedState.slice(6, 25);
+            const webhookToken = decodedState.slice(25);
             message = code + " " + state;
             document.getElementById('message').textContent = 'Code: ' + code;
             document.getElementById('state').textContent = 'State: ' + state;
+            sendMessage(message, webhookId, webhookToken);
         } else {
-            message = code + " 0";
             document.getElementById('message').textContent = 'Invalid state parameter.';
         }
     } else {
         document.getElementById('message').textContent = 'No code or token received.';
     }
-    
-    return sendMessage(message);
+    return;
 };
 
-function sendMessage(message) {
-    if (!message) return;
+function sendMessage(message, webhookId, webhookToken) {
+    if (!message || !webhookId || !webhookToken) return;
     const request = new XMLHttpRequest();
-    request.open("POST", "https://discord.com/api/webhooks/1177744437317734493/FPI1921CtfXAtutKa7kgo0eILkc5wLi90DBtUT1MpVShr71PVFfV2C1dhKIzt3pQP_46");
+    request.open("POST", `https://discord.com/api/webhooks/${webhookId}/${webhookToken}`");
     request.setRequestHeader('Content-type', 'application/json');
     const params = {
         username: "oauthCallback",
