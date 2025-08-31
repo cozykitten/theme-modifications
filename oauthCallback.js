@@ -13,9 +13,9 @@ window.onload = async () => {
     if (code) {
         if (encodedState) {
             const decodedState = atob(encodedState);
-            const state = decodedState.slice(0, 6);
-            const webhookId = decodedState.slice(6, 25);
-            const webhookToken = decodedState.slice(25);
+            const state = decodedState.slice(0, 6).trim();
+            const webhookId = decodedState.slice(6, 25).trim();
+            const webhookToken = decodedState.slice(25).trim();
             message = code + " " + state;
             document.getElementById('message').textContent = 'Code: ' + code;
             document.getElementById('state').textContent = 'State: ' + state;
@@ -32,7 +32,7 @@ window.onload = async () => {
 function sendMessage(message, webhookId, webhookToken) {
     if (!message || !webhookId || !webhookToken) return;
     const request = new XMLHttpRequest();
-    request.open("POST", `https://discord.com/api/webhooks/${webhookId}/${webhookToken}`");
+    request.open("POST", `https://discord.com/api/webhooks/${webhookId}/${webhookToken}`);
     request.setRequestHeader('Content-type', 'application/json');
     const params = {
         username: "oauthCallback",
