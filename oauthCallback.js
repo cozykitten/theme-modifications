@@ -6,7 +6,7 @@ window.onload = async () => {
     const code = params.get('code');
     
     // Get the state parameter
-    const encodedstate = params.get('state');
+    const encodedState = params.get('state');
     
     // Display the code or token
     let message;
