@@ -140,7 +140,7 @@
 /* header separated items (head & body element) */
 .bd-addon-list .bd-addon-card, /* bd plugins & themes */
 .authedApp__50a54, /* authorised apps */
-.tier_f15dca, /* server settings -> sticker */
+.tier_a36dee, /* server settings -> sticker */
 .checklist__5afba, /* server settings -> discovery */
 .connectContainer_c7f964 { /* connections */
     box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 25%);
@@ -148,7 +148,7 @@
 /* (header only) */
 .bd-addon-list .bd-addon-header,
 .authedApp__50a54 .marginBottom20_fd297e,
-.tierHeaderLocked_f15dca, .tierHeaderUnlocked_f15dca,
+.tierHeaderLocked_a36dee, .tierHeaderUnlocked_a36dee,
 .header__812a7,
 .connectContainer_c7f964 .connectHeader_c7f964,
 .enableContainer__5ea8c { /* welcome screen, no header & body class for this */
@@ -327,11 +327,8 @@
     padding-top: 4px;
 }
 .visual-refresh .flash__03436[data-flash=true] {
-    background-color: hsla(var(--accent-hsl), 0.3) !important;
+    background-color: hsla(var(--accent-hsl), 0.3);
     transition: 200ms ease-out background-color;
-}
-.backgroundFlash__5126c:not([style$="0);"]) {
-	background-color: unset !important;
 }
 
 
@@ -360,11 +357,11 @@
 }
 
 /* folder head background */
-/*.folder__48112, .folder__48112:hover {
+/*.hiddenVisually__27f77, .hiddenVisually__27f77:hover {
 	/background-color: hsla(var(--accent-hsl),var(--accent-opacity));
 }*/
 /* folder closed overlay colour */
-.folderIconWrapper__48112[style*="background-color: rgba(88"] {
+.folderPreviewWrapper__48112[style*="background-color: rgba(88"] {
 	background-color: transparent !important;
 }
 /* expanded folder icon colour */
