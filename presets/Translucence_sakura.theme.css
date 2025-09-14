@@ -32,8 +32,8 @@
 	
 	/* main content */
 	--main-rgb: 10, 11, 12;
-	--main-content-opacity: 0.8;
-	--sidebar-opacity: 0.88; /* 0.4 darker than 0.8 content colour */				
+	--main-content-opacity: 0.62;
+	--sidebar-opacity: 0.66; /* 0.4 darker than 0.8 content colour */				
 	
 	--main-content-color: rgba(var(--main-rgb), var(--main-content-opacity));
 	--sidebar-color: rgba(var(--main-rgb), var(--sidebar-opacity));
@@ -58,17 +58,17 @@
 	--reply-opacity: 0.65;
 	
 	/* popouts */
-	--popout-color: rgba(0,0,0,0.4);
+	--popout-color: rgba(0,0,0,0.2);
 	--popout-blur: 4px;
 	
 	/* cards */
 	--card-rgb: 0, 0, 0;
-	--card-opacity: 0.25;
+	--card-opacity: 0.15;
 	--card-color: rgba(var(--card-rgb), var(--card-opacity));
-	--card-color-hover: rgba(236, 221, 227, 0.25);
-	--card-color-select: rgba(240, 190, 209, 0.5); /*	-	*/
+	--card-color-hover: rgba(236, 221, 227, 0.15);
+	--card-color-select: rgba(240, 190, 209, 0.3); /*	-	*/
 	
-	--textarea-block-color: rgba(0, 0, 0, 0.4);
+	--textarea-block-color: rgba(0, 0, 0, 0.3);
 	
 	/* text */
 	--textarea-color: 255,255,255;
@@ -85,6 +85,6 @@
 	--interactive-active: #fff;
 	--interactive-muted: #777; /*	-	*/
 	
-	--scrollbar-opacity: 0.2;
-	--scrollbar-opacity-hover: 0.3;
+	--scrollbar-opacity: 0.1;
+	--scrollbar-opacity-hover: 0.15;
 }
