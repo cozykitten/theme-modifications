@@ -98,9 +98,9 @@
 }
 
 /* channel and role icons top of channel */
-.visual-refresh .emptyChannelIcon__00de6,
-.visual-refresh .iconWrapper__54b20,
-.visual-refresh .role_b4b2c3 {
+.emptyChannelIcon__00de6,
+.iconWrapper__54b20,
+.role_b4b2c3 {
     background-color: var(--card-color);
 	border-radius: var(--button-radius);
 	border: none;
@@ -149,7 +149,7 @@
 .bd-addon-list .bd-addon-header,
 .authedApp__50a54 .marginBottom20_fd297e,
 .tierHeaderLocked_a36dee, .tierHeaderUnlocked_a36dee,
-.header__812a7,
+.header__99871,
 .connectContainer_c7f964 .connectHeader_c7f964,
 .enableContainer__5ea8c { /* welcome screen, no header & body class for this */
     box-shadow: none;
@@ -193,11 +193,11 @@
 }
 
 /* mentions be accent colour */
-.visual-refresh .markup__75297 .wrapper_f61d60 {
+.visual-refresh .markup__75297 .wrapper_d852db {
   background-color: hsla(var(--accent-hsl), 0.25);
   color: hsl(var(--accent-hsl));
 }
-.visual-refresh .markup__75297 .wrapper_f61d60:hover {
+.visual-refresh .markup__75297 .wrapper_d852db:hover {
   background-color: hsla(var(--accent-hsl), 0.475);
   color: hsl(var(--accent-hsl));
 }
@@ -357,7 +357,7 @@
 }
 
 /* folder head background */
-/*.hiddenVisually__27f77, .hiddenVisually__27f77:hover {
+/*.hiddenVisually_b18fe2, .hiddenVisually_b18fe2:hover {
 	/background-color: hsla(var(--accent-hsl),var(--accent-opacity));
 }*/
 /* folder closed overlay colour */
